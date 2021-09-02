@@ -49,22 +49,7 @@
   <![endif]-->
     
     <!--====== PRELOADER PART START ======-->
-<form>
-      <label><b>Enter a jName</b></label>
-      <input type="text" name="FirstName" id="FirstName" />
-      <label><b>Enter Phone</b></label>
-      <input type="number" name="Phone" id="Contact" />
-    </form>
-    <input type="submit" onclick="showInput();" /><br />
-    <script>
-      function showInput() {
-        let obj={};
-        obj.FirstName= document.getElementById("FirstName").value;
-        obj.Contact=  document.getElementById("Contact").value;
-        window.setCustomFields(obj);
-      console.log("obj.. 123",obj);
-      }
-    </script>
+
     <div class="preloader">
         <div class="loader">
             <div class="ytp-spinner">
@@ -455,6 +440,22 @@
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+<form>
+      <label><b>Enter a jName</b></label>
+      <input type="text" name="FirstName" id="FirstName" />
+      <label><b>Enter Phone</b></label>
+      <input type="number" name="Phone" id="Contact" />
+    </form>
+    <input type="submit" onclick="showInput();" /><br />
+    <script>
+      function showInput() {
+        let obj={};
+        obj.FirstName= document.getElementById("FirstName").value;
+        obj.Contact=  document.getElementById("Contact").value;
+        window.setCustomFields(obj);
+      console.log("obj.. 123",obj);
+      }
+    </script>
     
 </body>
 
